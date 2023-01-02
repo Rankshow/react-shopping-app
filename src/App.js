@@ -1,7 +1,7 @@
 import NavbarComp from './component/NavbarComp';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BasicExample from './component/CardComp';
-import ChatBox from './component/Section'
+import Section from './component/Section'
 import './App.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <>
     <div className="App">
       <NavbarComp />
-     <ChatBox />
+     <Section />
      <BasicExample />
     </div>
      </>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Bankis from "../image/Bankis.png";
 
-const ChatBox = () => {
+const Section = () => {
     return(
         <>
           <div className='bg-muted'>
@@ -12,4 +12,4 @@ const ChatBox = () => {
         </>
     )
 }
-export default ChatBox;
+export default Section;
