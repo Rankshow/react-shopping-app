@@ -1,10 +1,12 @@
 import React from "react";
+import { Button } from "bootstrap";
 
 const HeaderComp = () =>{
   return (
-    <div className="header-wrapper">
-      <h1>HeaderComp</h1>
-      </div>
+    <>
+      <h1>We are the best in cooking different intercontinentals food enriching recipes to sweeten you.</h1>
+      <Button variant="danger">Go somewhere</Button>
+    </>
   )
 }
 
