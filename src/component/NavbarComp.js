@@ -11,7 +11,7 @@ const NavbarComp = () => {
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ml-auto" style={{fontSize:'20px', fontWeight:'10em'}}>
+                    <Nav className="me-auto" style={{fontSize:'20px', fontWeight:'10em'}}>
                         <Nav.Link className='text-warning' href="#home">Home</Nav.Link>
                         <Nav.Link className='text-warning' href="#about">About</Nav.Link>
                         <Nav.Link className='text-warning' href="#about">Our Services</Nav.Link>
