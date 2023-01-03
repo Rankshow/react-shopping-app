@@ -3,14 +3,16 @@ import Card from 'react-bootstrap/Card';
 import garlic from '../image/GaliRice.jpg';
 import chicken from '../image/chickenRice.jpg';
 import shrimp from '../image/ShrimpRice.jpg';
+import './CardComp.css'
 
 
 function BasicExample() {
   return (
     <>
     <div className='row py-5'>
+      <h1 className='text-center pb-2 text-primary'>Our Service</h1>
     <Card className='mx-auto' style={{ width: '18rem', margin: '0.5rem' }}>
-      <Card.Img variant="top" src={garlic} />
+      <Card.Img className='section-main' variant="top" src={garlic} />
       <Card.Body>
         <Card.Title className='text-center'>Galic Rice</Card.Title>
         <Card.Text>
@@ -21,7 +23,7 @@ function BasicExample() {
       </Card.Body>
     </Card>
     <Card className='mx-auto' style={{ width: '18rem', margin: '0.5rem' }}>
-      <Card.Img variant="top" src={chicken} />
+      <Card.Img className='section-main' variant="top" src={chicken} />
       <Card.Body>
         <Card.Title className='text-center'>Chicken Rice</Card.Title>
         <Card.Text>
@@ -32,7 +34,7 @@ function BasicExample() {
       </Card.Body>
     </Card>
     <Card className='mx-auto'  style={{ width: '18rem', margin: '0.5rem' }}>
-      <Card.Img variant="top" src={shrimp} />
+      <Card.Img className='section-main' variant="top" src={shrimp} />
       <Card.Body>
         <Card.Title>Shrimp Rice</Card.Title>
         <Card.Text>
@@ -43,7 +45,7 @@ function BasicExample() {
       </Card.Body>
     </Card>
     <Card className='mx-auto'  style={{ width: '18rem', margin: '0.5rem' }}>
-      <Card.Img variant="top" src={garlic} />
+      <Card.Img className='section-main' variant="top" src={garlic} />
       <Card.Body>
         <Card.Title className='text-center'>White rice</Card.Title>
         <Card.Text>
