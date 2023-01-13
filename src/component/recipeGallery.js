@@ -31,7 +31,7 @@ const RecipeData = () => {
           </h3>
           <div className='text-center'>
           <button className='w-25 rounded-pill p-2 bg-danger' onClick={handleImageEvent}>
-            {showText ? 'Hide' : 'Show'} info
+            {showText ? 'Hide' : 'Display'} info
           </button>
           </div>
             <div className='fs-5 text-center text-white bg-dark p-4 m-3 rounded-pill'>
