@@ -1,6 +1,7 @@
 import logo from '../image/FreshFood.jpg';
 import { Navbar, Nav, Container} from 'react-bootstrap';
 
+
 const NavbarComp = () => {
         return (
             <div>
@@ -14,9 +15,9 @@ const NavbarComp = () => {
                     <Nav className="me-auto" style={{fontSize:'20px', fontWeight:'10em'}}>
                         <Nav.Link className='text-warning' href="#home">Home</Nav.Link>
                         <Nav.Link className='text-warning' href="#about">About</Nav.Link>
-                        <Nav.Link className='text-warning' href="#about">Our Services</Nav.Link>
+                        <Nav.Link className='text-warning' href="#service">Our Services</Nav.Link>
                         <Nav.Link className='text-warning' href="#contact">Contact</Nav.Link>
-                        <Nav.Link className='text-warning' href="#contact">Features</Nav.Link>
+                        <Nav.Link className='text-warning' href="#featurs">Features</Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
