@@ -1,0 +1,22 @@
+.list:hover{
+  color: rgb(233, 236, 199) !important;
+  cursor: pointer;
+  /* font-size: 24px; */
+  text-decoration: underline;
+}
+
+@media (min-width: 360px) and (max-width: 991.98px) {
+    .container-head {
+      padding-top: 0.8rem;
+      display: flex;
+      flex: 1;
+     flex-direction: column;
+    }
+    .footer-head {
+    text-align: center;
+   }
+    .copy-right{
+    /* text-align: center; */
+    margin: auto;
+    }
+  }

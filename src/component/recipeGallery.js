@@ -53,9 +53,9 @@ const RecipeData = () => {
             {showText ? 'Hide' : 'Display'} info
           </button>
           </div>
-           <div className='text-center p-3  fs-5 rounded bg-success w-50px text-white'>
+           <div>
             {
-            showText && <p>{recipeItem.description}</p>
+            showText && <p className='text-center p-3  fs-5 rounded bg-success w-50px text-white'>{recipeItem.description}</p>
             }
            </div>
             <div className='mx-auto'>
