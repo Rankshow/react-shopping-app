@@ -1,56 +1,55 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
+
+let nextId = 3;
+const initialCounters = [
+  { id: 0, name: 'Marta Colvin'},
+  { id: 1, name: 'Spark john'},
+  { id: 2, name: 'Jonas Schmetmann'},
+];
 
 const MovingDot = () => {
- const [person, setPerson] = useState({
-    firstName: 'Micheal',
-    lastName: 'Uwaoma',
-    email: 'uwaomaobinna@gmail.com'
- });
+  const [name, setName] = useState('');
+  const [artists, setArtists] = useState(initialCounters);
 
-  // event handler to get the value of the firstname
-   const handleFirstNameChange = (e) => {
-    setPerson({
-    ...person, 
-     firstName: e.target.value
-   })
-   }
+  const handleList = () => {
+     const nextList = [...artists];
+     nextList.reverse();
+     setArtists(nextList);
+  }
 
-  // event handler to get the value of the lastname
-   const handleLastNameChange = (e) => {
-    setPerson({
-    ...person,
-    lastName: e.target.value
-   })
-   }
+  const handleEvent = () => {
+    const insertAt = 1;
+      const nextArtist = [
+        // add item before list
+        ...artists.slice(0, insertAt),
+        //new item
+        { id: nextId++, name: name},
+        //add after the list in the item
+      ...artists.slice(insertAt),
+      ];
+      setArtists(nextArtist);
+      setName('');
+    }
 
-   // event handler to get the value of the email
-   const handleEmailChange = (e) => {
-    setPerson({
-    ...person,
-    email: e.target.value
-   })
-   }
-
- return(
-    <div>
-        <label>
-            FirstName:
-            <input onChange={handleFirstNameChange} value={person.firstName} />
-        </label> <br></br>
-        <label>
-            LastName:
-            <input onChange={handleLastNameChange} value={person.lastName} />
-        </label><br></br>
-        <label>
-            Email:
-            <input onChange={handleEmailChange} value={person.email} />
-        </label>
-        <p>
-            {person.firstName}{' '}
-            {person.lastName}{' '}
-            ({person.email})
-        </p>
-    </div>
- )
+    return(
+      <>
+        <h1>Inserting Everyday Working</h1>
+          <input className="m-4" value={name} onChange={e => setName(e.target.value)}/>
+          <button onClick={handleEvent}>
+            insert Value
+          </button>
+          <button onClick={handleList}>
+            Reverse
+          </button>
+        <ul>
+          {artists.map(items => (
+          <li key={items.id}>
+            {items.name}
+          </li>
+          ))}
+        </ul>
+      </>
+    )
 }
+
 export default MovingDot;

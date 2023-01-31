@@ -1,12 +1,13 @@
 import NavbarComp from './component/NavbarComp';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import BasicExample from './component/CardComp';
+import CardComp from './component/CardComp';
 import Section from './component/Section'
 import AddCart from './component/AddCartComp'  
 import RecipeData from './component/recipeGallery'
 import Footer from './component/Footer';
-// import MovingDot from './component/MovingDot';
+import MovingDot from './component/MovingDot';
 import GallerySwipe from "./component/GallerySwipe";
+import ShoppingCart from "./component/Product";
 import './App.css';
 
 function App() {
@@ -15,12 +16,13 @@ function App() {
     <div className="App">
       <NavbarComp />
      <Section />
-     <BasicExample />
+     <CardComp />
      <GallerySwipe />
      <AddCart />
      <RecipeData/>
      <Footer/>
-     {/* <MovingDot /> */}
+     <MovingDot />
+     <ShoppingCart />
     </div>
      </>
   );

@@ -6,7 +6,7 @@ import shrimp from "../image/ShrimpRice.jpg";
 import WhiteRice from "../image/white_rice.jpg";
 import "./CardComp.css";
 
-function BasicExample() {
+function CardComp() {
   return (
     <>
       <div className="row py-5">
@@ -68,4 +68,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default CardComp;
