@@ -12,7 +12,7 @@ const Section = () => {
                Simply Recipes is a trusted resource for home cooks with more than 3,000 tested recipes, guides, and meal plans, drawing over 15 million readers each month from around the world. We’re supported by a group of recipe developers, food writers, recipe and product testers, photographers, and other creative professionals.
                </p>
           </div>
-          <div style={{display: 'flex', justifyContent:'center' }}><Button>Search for more recipes</Button></div>
+         <div style={{display: 'flex', justifyContent:'center' }}><Button>Search for more recipes</Button></div>
         </div>
         </>
     )
